@@ -21,6 +21,7 @@ function App() {
 
   return (
     <div>
+      <h2>Simple To do app</h2>
       <NewTodo />
       <ToDos />
     </div>
