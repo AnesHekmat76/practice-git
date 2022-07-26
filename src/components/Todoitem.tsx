@@ -1,7 +1,7 @@
 import React from "react";
 import Todo from "../models/todo";
 import { useDispatch } from "react-redux";
-import { todoActions } from "../store";
+import { todoActions } from "../store/todo-slice";
 
 const TodoItem: React.FC<{ todo: Todo }> = (props) => {
   const dispatch = useDispatch();

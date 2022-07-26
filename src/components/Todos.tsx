@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../store";
 
 const ToDos: React.FC = () => {
-  const todoItems = useSelector((state: RootState) => state.todoItems);
+  const todoItems = useSelector((state: RootState) => state.todo.todoItems);
   return (
     <ul>
       {todoItems.map((item) => (

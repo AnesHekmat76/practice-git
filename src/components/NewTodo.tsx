@@ -1,7 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
-import { todoActions } from "../store";
+import { todoActions } from "../store/todo-slice";
 
 const NewTodo: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
