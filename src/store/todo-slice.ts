@@ -30,6 +30,9 @@ const todoSlice = createSlice({
         (item) => item.id !== action.payload
       );
     },
+    getToDosFromLocalStorage (state,action) {
+      state.todoItems = action.payload;
+    }
   },
 });
 
