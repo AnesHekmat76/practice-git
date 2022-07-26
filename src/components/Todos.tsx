@@ -1,16 +1,14 @@
 import React from "react";
-import Todo from "../models/todo";
-import { ToDosContext } from "../store/todos-context";
-import { useContext } from "react";
 import TodoItem from "./Todoitem";
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
 
 const ToDos: React.FC = () => {
-  const todoCtx = useContext(ToDosContext);
-  todoCtx.removeTodo;
+  const todoItems = useSelector((state: RootState) => state.todoItems);
   return (
     <ul>
-      {todoCtx.items.map((item) => (
-        <TodoItem key={item.id} todo={item} deleteTodo={todoCtx.removeTodo} />
+      {todoItems.map((item) => (
+        <TodoItem key={item.id} todo={item} />
       ))}
     </ul>
   );

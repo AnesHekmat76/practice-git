@@ -1,5 +1,3 @@
-import { type } from "os";
-
 class Todo {
     id: string;
     text: string;
